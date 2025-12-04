@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pallavi Sharma - Product Leader & Visionary</title>
+    <!-- Load Tailwind CSS CDN for modern, utility-first styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles and configuration for a professional look */
+        :root {
+            --primary-color: #1d4ed8; /* Blue-700 for deeper contrast */
+            --accent-color: #f59e0b; /* Amber-500 */
+            --bg-light: #f9fafb; /* Gray-50 */
+            --bg-dark: #111827; /* Gray-900 */
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+            background-color: var(--bg-light); /* Set body background */
+        }
+        /* Custom glow effect for CTAs - now using deeper shadows */
+        .cta-glow {
+            box-shadow: 0 4px 15px rgba(29, 78, 216, 0.4); /* Deeper blue shadow */
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .cta-glow:hover {
+            box-shadow: 0 8px 25px rgba(29, 78, 216, 0.6);
+            transform: translateY(-3px); /* Slightly more pronounced lift */
+        }
+        /* Style for interactive cards */
+        .interactive-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid #e5e7eb;
+        }
+        .interactive-card:hover {
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transform: translateY(-5px);
+        }
+        .section-header {
+            /* Making the accent line thicker and clearer */
+            border-left: 8px solid var(--accent-color);
+            padding-left: 1.25rem;
+            font-size: 2.25rem; /* Larger font for main title */
+            font-weight: 800; /* Extra bold */
+        }
+        /* Custom Timeline Line */
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 3px; /* Slightly thicker line */
+            background-color: #d1d5db; /* Gray-300 */
+        }
+        .timeline-item:last-child::before {
+            height: 1.5rem;
+        }
+
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Navbar for easy navigation -->
+    <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <a href="#hero" class="text-2xl font-extrabold text-gray-900 tracking-wider">
+                    P.<span class="text-blue-700">Sharma</span>
+                </a>
+                <div class="flex space-x-6">
+                    <a href="#case-studies" class="text-gray-600 hover:text-blue-700 font-medium transition duration-150 ease-in-out">Impact</a>
+                    <a href="#skills" class="text-gray-600 hover:text-blue-700 font-medium transition duration-150 ease-in-out">Toolkit</a>
+                    <a href="#experience" class="text-gray-600 hover:text-blue-700 font-medium transition duration-150 ease-in-out">Career</a>
+                    <a href="#contact" class="text-gray-600 hover:text-blue-700 font-medium transition duration-150 ease-in-out">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main class="max-w-7xl mx-auto">
+        
+        <!-- 1. HERO SECTION: Visionary Leader - Added subtle gradient -->
+        <section id="hero" class="pt-20 pb-24 px-4 sm:px-6 lg:px-8 text-center rounded-b-[40px] shadow-2xl" 
+                 style="background: linear-gradient(145deg, #f9fafb, #e5e7eb);">
+            <div class="max-w-4xl mx-auto">
+                <!-- Placeholder for Professional Photo -->
+                <div class="mx-auto w-36 h-36 rounded-full overflow-hidden mb-8 bg-blue-700 border-4 border-white shadow-xl">
+                    <img src="https://placehold.co/144x144/1d4ed8/ffffff?text=PS" alt="Pallavi Sharma Profile Photo" class="w-full h-full object-cover" onerror="this.onerror=null; this.src='https://placehold.co/144x144/1d4ed8/ffffff?text=PS'">
+                </div>
+                
+                <h1 class="text-5xl sm:text-6xl lg:text-7xl font-extrabold text-gray-900 leading-tight mb-4 tracking-tight">
+                    Product Leader: <span class="text-blue-700">Driving Innovation</span> & Strategic Growth
+                </h1>
+                
+                <p class="text-xl text-gray-600 mb-10 max-w-3xl mx-auto">
+                    A results-driven professional adept at leveraging data analytics and cross-functional leadership to define product vision, optimize digital experiences, and achieve strategic business outcomes. Ready to transition into a Product Manager role.
+                </p>
+
+                <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+                    <a href="#case-studies" class="bg-blue-700 text-white font-bold py-3.5 px-10 rounded-xl cta-glow text-lg">
+                        View Quantified Impact
+                    </a>
+                    <a href="https://linkedin.com/in/pallavisharma1991" target="_blank" class="bg-white border-2 border-gray-300 text-gray-700 font-bold py-3.5 px-10 rounded-xl hover:bg-gray-100 transition duration-150 ease-in-out text-lg">
+                        Connect on LinkedIn
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. CASE STUDIES: Impact, Strategy & Execution - Enhanced Cards -->
+        <section id="case-studies" class="py-24 px-4 sm:px-6 lg:px-8 bg-white">
+            <header class="mb-14 max-w-3xl">
+                <h2 class="section-header text-gray-900 mb-4">
+                    Quantified Product Impact
+                </h2>
+                <p class="text-xl text-gray-600 mt-6">
+                    Demonstrating strategic vision, cross-functional execution, and measurable business results in complex digital environments.
+                </p>
+            </header>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+
+                <!-- Case Study 1: Conversion Rate Improvement -->
+                <div class="interactive-card bg-white p-8 rounded-2xl shadow-xl">
+                    <span class="text-6xl font-extrabold text-blue-700 block mb-4">30%</span>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">E-Commerce UX Optimization</h3>
+                    <p class="text-gray-600 mb-5">
+                        **Strategy:** Led a project to redesign the critical checkout funnel based on deep heat-mapping and user research insights. Collaborated closely with UX and Development teams for rapid deployment.
+                    </p>
+                    <p class="text-md font-extrabold text-amber-600 flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                        </svg>
+                        Impact: Increased Conversion Rates.
+                    </p>
+                </div>
+
+                <!-- Case Study 2: Operational Efficiency -->
+                <div class="interactive-card bg-white p-8 rounded-2xl shadow-xl">
+                    <span class="text-6xl font-extrabold text-blue-700 block mb-4">23%</span>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Data-Driven Decision Framework</h3>
+                    <p class="text-gray-600 mb-5">
+                        **Strategy:** Implemented a new data governance model and centralized reporting system across business units, providing standardized, reliable metrics for critical decisions and resource allocation.
+                    </p>
+                    <p class="text-md font-extrabold text-amber-600 flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                        </svg>
+                        Impact: Reduced operational inefficiencies.
+                    </p>
+                </div>
+
+                <!-- Case Study 3: Revenue Growth -->
+                <div class="interactive-card bg-white p-8 rounded-2xl shadow-xl">
+                    <span class="text-6xl font-extrabold text-blue-700 block mb-4">13%</span>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Real-Time Insight Generation</h3>
+                    <p class="text-gray-600 mb-5">
+                        **Strategy:** Developed real-time data dashboards (Power BI/Tableau) that allowed stakeholders to track KPIs instantly, enabling rapid iteration and tactical adjustments to sales and marketing campaigns.
+                    </p>
+                    <p class="text-md font-extrabold text-amber-600 flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                        </svg>
+                        Impact: Drove organic revenue growth.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. SKILLS & TOOLKIT: Execution & Data-Driven -->
+        <section id="skills" class="py-24 px-4 sm:px-6 lg:px-8 bg-gray-50">
+            <header class="mb-14 max-w-3xl">
+                <h2 class="section-header text-gray-900 mb-4">
+                    Product Management Toolkit
+                </h2>
+                <p class="text-xl text-gray-600 mt-6">
+                    A comprehensive set of tools and methodologies for strategic product execution and in-depth data analysis.
+                </p>
+            </header>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                
+                <!-- Product Strategy & Execution -->
+                <div class="interactive-card bg-white p-6 rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-bold text-blue-700 mb-4 border-b pb-2 border-gray-100">Product & Agile</h3>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-center"><span class="w-2 h-2 bg-amber-500 rounded-full mr-3 shrink-0"></span>Agile & Scrum Methodologies</li>
+                        <li class="flex items-center"><span class="w-2 h-2 bg-amber-500 rounded-full mr-3 shrink-0"></span>Business Analysis & Requirement Gathering</li>
+                        <li class="flex items-center"><span class="w-2 h-2 bg-amber-500 rounded-full mr-3 shrink-0"></span>Jira & Confluence Management (Epics/User Stories)</li>
+                        <li class="flex items-center"><span class="w-2 h-2 bg-amber-500 rounded-full mr-3 shrink-0"></span>UX Research Collaboration & Testing</li>
+                        <li class="flex items-center"><span class="w-2 h-2 bg-amber-500 rounded-full mr-3 shrink-0"></span>Modeling Tools (Visio, Lucid, Balsamiq)</li>
+                    </ul>
+                </div>
+
+                <!-- Data Analysis & BI -->
+                <div class="interactive-card bg-white p-6 rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-bold text-blue-700 mb-4 border-b pb-2 border-gray-100">Data Analytics & BI</h3>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-center"><span class="w-2 h-2 bg-amber-500 rounded-full mr-3 shrink-0"></span>Power BI & Tableau Reporting</li>
+                        <li class="flex items-center"><span class="w-2 h-2 bg-amber-500 rounded-full mr-3 shrink-0"></span>Key Performance Indicators (KPI) & Metrics Tracking</li>
+                        <li class="flex items-center"><span class="w-2 h-2 bg-amber-500 rounded-full mr-3 shrink-0"></span>Data Visualization & Storytelling</li>
+                        <li class="flex items-center"><span class="w-2 h-2 bg-amber-500 rounded-full mr-3 shrink-0"></span>ETL & Data Migration Principles</li>
+                        <li class="flex items-center"><span class="w-2 h-2 bg-amber-500 rounded-full mr-3 shrink-0"></span>Google Data Analytics Certified</li>
+                    </ul>
+                </div>
+
+                <!-- Technical & Programming -->
+                <div class="interactive-card bg-white p-6 rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-bold text-blue-700 mb-4 border-b pb-2 border-gray-100">Technical Foundation</h3>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-center"><span class="w-2 h-2 bg-amber-500 rounded-full mr-3 shrink-0"></span>Programming (Python/R) for analysis</li>
+                        <li class="flex items-center"><span class="w-2 h-2 bg-amber-500 rounded-full mr-3 shrink-0"></span>Database Management (MySQL)</li>
+                        <li class="flex items-center"><span class="w-2 h-2 bg-amber-500 rounded-full mr-3 shrink-0"></span>Software Development Lifecycle (SDLC)</li>
+                        <li class="flex items-center"><span class="w-2 h-2 bg-amber-500 rounded-full mr-3 shrink-0"></span>Android App Dev (Java/Kotlin, MVVM)</li>
+                        <li class="flex items-center"><span class="w-2 h-2 bg-amber-500 rounded-full mr-3 shrink-0"></span>API Integration (Payment, Location, Auth)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. PROFESSIONAL TIMELINE: Cross-Functional Leadership -->
+        <section id="experience" class="py-24 px-4 sm:px-6 lg:px-8 bg-white">
+            <header class="mb-14 max-w-3xl">
+                <h2 class="section-header text-gray-900 mb-4">
+                    Professional Journey
+                </h2>
+                <p class="text-xl text-gray-600 mt-6">
+                    A history of driving technical execution and translating business needs into effective, data-backed solutions.
+                </p>
+            </header>
+
+            <div class="relative max-w-4xl mx-auto pl-4">
+                
+                <!-- Home Credit: Senior Business Data Analyst -->
+                <div class="timeline-item relative pb-16 pl-12">
+                    <div class="absolute w-5 h-5 rounded-full bg-blue-700 -left-2.5 top-0 border-4 border-white shadow-md"></div>
+                    <p class="text-sm text-gray-500 font-semibold uppercase tracking-widest mb-1">Jan 2018 - Feb 2019</p>
+                    <h3 class="text-xl font-bold text-gray-900">Senior Business Data Analyst</h3>
+                    <p class="text-blue-700 font-semibold mb-2">Home Credit</p>
+                    <ul class="list-disc space-y-2 pl-5 text-gray-700">
+                        <li>**Cross-Functional Leadership:** Led teams (UX Design, Research, Devs, QA) to successfully ship eCommerce enhancements and improve customer experiences.</li>
+                        <li>**Product Ownership:** Managed Jira capabilities, epics, and user stories to streamline product development and ensure feature alignment with business goals.</li>
+                        <li>**Data-Driven Strategy:** Analyzed market trends and provided strategic recommendations to enhance product roadmaps and optimize business operations.</li>
+                    </ul>
+                </div>
+
+                <!-- Previous Experience Placeholder -->
+                <div class="timeline-item relative pb-16 pl-12">
+                    <div class="absolute w-5 h-5 rounded-full bg-amber-500 -left-2.5 top-0 border-4 border-white shadow-md"></div>
+                    <p class="text-sm text-gray-500 font-semibold uppercase tracking-widest mb-1">Sept 2016 - Aug 2018</p>
+                    <h3 class="text-xl font-bold text-gray-900">Business Data Analyst</h3>
+                    <p class="text-amber-600 font-semibold mb-2">Previous Role</p>
+                    <ul class="list-disc space-y-2 pl-5 text-gray-700">
+                        <li>Developed data-driven insights using Power BI/Tableau to support executive decision-making.</li>
+                        <li>Created detailed reports on KPIs to track business performance and identify optimization strategies.</li>
+                        <li>Translated complex stakeholder needs into clear, actionable analytical solutions.</li>
+                    </ul>
+                </div>
+                
+                <!-- Suntec Technologies: Software Development -->
+                <div class="timeline-item relative pl-12">
+                    <div class="absolute w-5 h-5 rounded-full bg-blue-700 -left-2.5 top-0 border-4 border-white shadow-md"></div>
+                    <p class="text-sm text-gray-500 font-semibold uppercase tracking-widest mb-1">Sept 2014 - Aug 2016</p>
+                    <h3 class="text-xl font-bold text-gray-900">Software Developer</h3>
+                    <p class="text-blue-700 font-semibold mb-2">Suntec Technologies</p>
+                    <ul class="list-disc space-y-2 pl-5 text-gray-700">
+                        <li>**Technical Execution:** Developed scalable Android applications using Java/Kotlin, integrating third-party APIs.</li>
+                        <li>**Quality & Optimization:** Conducted performance optimizations, reducing app crashes by **27%**.</li>
+                        <li>**User-Centric Focus:** Worked closely with UI/UX teams to improve customer experience, resulting in an **18% increase in user retention**.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 5. CONTACT / CTA - Darker, bolder footer -->
+        <section id="contact" class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-900 text-white rounded-t-[40px] shadow-inner">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-5xl font-extrabold mb-4">Let's Connect and Build the Future.</h2>
+                <p class="text-xl text-gray-300 mb-10">
+                    I am actively seeking Product Manager roles and opportunities to drive customer-centric innovation.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-8">
+                    <a href="mailto:pallavishr91@gmail.com" class="bg-amber-500 text-gray-900 font-bold py-4 px-12 rounded-xl text-lg cta-glow hover:bg-amber-400">
+                        Email: pallavishr91@gmail.com
+                    </a>
+                    <!-- <a href="https://github.com/palz91" target="_blank" class="bg-gray-700 text-white font-bold py-4 px-12 rounded-xl text-lg hover:bg-gray-600 transition duration-150 ease-in-out">
+                        GitHub Portfolio
+                    </a> -->
+                </div>
+                
+                <p class="text-lg text-gray-400 mt-10">
+                    Phone: 614-822-8147 | Work Authorization: H4 EAD (No Sponsorship Needed)
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Simple JS for smooth scroll, though CSS scroll-behavior is preferred -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const links = document.querySelectorAll('nav a[href^="#"]');
+            links.forEach(link => {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
